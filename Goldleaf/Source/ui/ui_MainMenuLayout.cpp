@@ -130,9 +130,10 @@ namespace ui
 
     void MainMenuLayout::updateMenuItem_Click()
     {
-        global_app->LoadMenuData(cfg::strings::Main.GetString(284), "Update", cfg::strings::Main.GetString(302));
-        global_app->LoadLayout(global_app->GetUpdateLayout());
-        global_app->GetUpdateLayout()->StartUpdateSearch();
+        return;
+        //global_app->LoadMenuData(cfg::strings::Main.GetString(284), "Update", cfg::strings::Main.GetString(302));
+        //global_app->LoadLayout(global_app->GetUpdateLayout());
+        //global_app->GetUpdateLayout()->StartUpdateSearch();
     }
 
     void MainMenuLayout::aboutMenuItem_Click()
