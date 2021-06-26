@@ -161,6 +161,13 @@ namespace cfg {
                 settings.custom_lang = Language::Portuguese;
                 break;
             }
+            case SetLanguage_ZHTW:
+            case SetLanguage_ZHHANT:
+            case SetLanguage_ZHCN:
+            case SetLanguage_ZHHANS: {
+                settings.custom_lang = Language::ChineseSimplified;
+                break;
+            }
             default: {
                 settings.custom_lang = Language::English;
                 break;
