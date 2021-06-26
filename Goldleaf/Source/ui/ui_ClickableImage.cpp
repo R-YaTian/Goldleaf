@@ -134,8 +134,8 @@ namespace ui
         }
         else if(!Pos.IsEmpty())
         {
-            touchPosition tch;
-            hidTouchRead(&tch, 0);
+            //touchPosition tch;
+            //hidTouchRead(&tch, 0);
             if((Pos.X >= this->GetProcessedX()) && (Pos.X < (this->GetProcessedX() + w)) && (Pos.Y >= this->GetProcessedY()) && (Pos.Y < (this->GetProcessedY() + h)))
             {
                 touchtp = std::chrono::steady_clock::now();

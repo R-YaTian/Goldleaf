@@ -35,9 +35,9 @@ namespace hos
 
     bool IsCharging()
     {
-        auto charger = ChargerType_None;
+        auto charger = PsmChargerType_Unconnected;
         psmGetChargerType(&charger);
-        return charger > ChargerType_None;
+        return charger != PsmChargerType_Unconnected;
     }
 
     std::string GetCurrentTime()
